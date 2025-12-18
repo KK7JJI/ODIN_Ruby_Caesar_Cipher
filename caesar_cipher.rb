@@ -1,6 +1,7 @@
 # TOP Ruby Project, Caesar Cipher
 #
 
+# method/class definitions
 def print_user_help_message()
     File.open("help_message.txt") do |f|
       puts f.read
@@ -36,6 +37,7 @@ def user_entered_invalid_options?(operation, shift_quantity, message)
 
 end
 
+##
 class CaesarsMessage
 
   attr_accessor :decoded_message, :coded_message, :shift_quantity, :msg_array, \
@@ -114,14 +116,17 @@ class CaesarsMessage
 
 end
 
+## begin code
+
 if ARGV.length != 3
+  print_user_help_message()
+elsif ARGV[0] == "--help" || ARGV[0] == "-h"
   print_user_help_message()
 end
 
 operation = ARGV[0]
 shift_quantity = ARGV[1].to_i
 message = ARGV[2]
-
 
 unless user_entered_invalid_options?(operation, shift_quantity.to_i, message)
     my_message = CaesarsMessage.new(shift_quantity.to_i)
