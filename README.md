@@ -1,8 +1,6 @@
 #TOP - Project: Caesar Cipher
 
-===============================================================================
 ##Requirements:
-===============================================================================
 
 - encryption: The cipher will read in a clear message, shift each character to
 the right by the specified amount, and then return the encrypted message.
@@ -25,20 +23,19 @@ The shift quantity wraps from 126 - 32 during encryption and back during
 decryption.  There are 94 characters in the range of ascii characters used
 however shifts > 94 are supported using modulo arithmatic.
 
-===============================================================================
 ##Instructions
-===============================================================================
+
 caesar_cipher.rb is a ruby script run from the commmand line using 3 input
 parameters to either encode or decode a message by shifting individual
 characters n-places right (encode) or left (decode).
 
 **Usage is**:
 
-  Get Help:
-`    ruby caesar_cipher --help | -h`
+  Get Help:\
+    ruby caesar_cipher --help | -h
 
-  Code / Decode messages:
-`    ruby caesar_cipher.rb OPTION, QUANTITY, MESSAGE`
+  Code / Decode messages:\
+    ruby caesar_cipher.rb OPTION, QUANTITY, MESSAGE
 
     OPTION is either:
 
