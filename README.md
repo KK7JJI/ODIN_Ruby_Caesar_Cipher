@@ -13,7 +13,7 @@ includes spaces, special characters, punctuation, digits, as well as
 upper and lower case letters.
 
 The program is designed to be run on the command line with the message
-included as a paramenter.
+included as an argument.
 
 **examples**:
 ```
