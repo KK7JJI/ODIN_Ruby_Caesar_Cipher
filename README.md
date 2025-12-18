@@ -15,12 +15,14 @@ upper and lower case letters.
 The program is designed to be run on the command line with the message
 included as a paramenter.
 
-<ins>examples:
-ruby caesar_cipher --decode 1 'A simple message'/
+**examples**:
+```
+ruby caesar_cipher --decode 1 'A simple message'
 => 'B!tjnqmf!nfttbhf'
 
 ruby caesar_cipher --encode 1 'B!tjnqmf!nfttbhf'/
 => 'A simple message'
+```
 
 The shift quantity wraps from 126 - 32 during encryption and back during
 decryption.  There are 94 characters in the range of ascii characters used
