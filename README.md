@@ -31,26 +31,26 @@ characters n-places right (encode) or left (decode).
 
 **Usage is**:
 
-  Get Help:\
-    `ruby caesar_cipher --help | -h`
+Get Help:\
+    ruby caesar_cipher --help | -h
 
-  Code / Decode messages:\
-    `ruby caesar_cipher.rb OPTION, QUANTITY, MESSAGE`
+Code / Decode messages:\
+    ruby caesar_cipher.rb OPTION, QUANTITY, MESSAGE
 
-    OPTION is either:
+OPTION is either:
+```
+    --encode
+    --decode
+```
+QUANTITY is any positive integer representing the magnitude of the
+character shift used to encode or decode the message.
 
-      --encode
-      --decode
-
-    QUANTITY is any positive integer representing the magnitude of the
-    character shift used to encode or decode the message.
-
-    MESSAGE is a string representing the message to be coded or decoded.
+MESSAGE is a string representing the message to be coded or decoded.
 
 **Examples**:
 ```
-  ruby caesar_cipher.rb --encode, 1, "A simple message"
-  ruby caesar_cipher.rb --decode, 1, "B!tjnqmf!nfttbhf"
+ruby caesar_cipher.rb --encode, 1, "A simple message"
+ruby caesar_cipher.rb --decode, 1, "B!tjnqmf!nfttbhf"
 ```
 
 Message coding is based on ascii values 32 - 126 covering space " " through "~"
