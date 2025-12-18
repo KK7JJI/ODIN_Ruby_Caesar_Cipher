@@ -40,7 +40,7 @@ Get Help:\
 ```ruby caesar_cipher --help | -h```
 
 Code / Decode messages:\
-```ruby caesar_cipher.rb OPTION, QUANTITY, MESSAGE```
+```ruby caesar_cipher.rb OPTION QUANTITY MESSAGE```
 
 OPTION is one of:
 ```
