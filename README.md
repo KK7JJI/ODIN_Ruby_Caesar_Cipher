@@ -15,9 +15,12 @@ upper and lower case letters.
 The program is designed to be run on the command line with the message
 included as a paramenter.
 
-<ins>examples:<\ins>
-- cipher "encrypt", 1, "A simple message" # -> "B!tjnqmf!nfttbhf"
-- cipher "decrypt", 1, "B!tjnqmf!nfttbhf" # -> "A simple message"
+<ins>examples:
+ruby caesar_cipher --decode 1 'A simple message'/
+=> 'B!tjnqmf!nfttbhf'
+
+ruby caesar_cipher --encode 1 'B!tjnqmf!nfttbhf'/
+=> 'A simple message'
 
 The shift quantity wraps from 126 - 32 during encryption and back during
 decryption.  There are 94 characters in the range of ascii characters used
@@ -32,12 +35,12 @@ characters n-places right (encode) or left (decode).
 **Usage is**:
 
 Get Help:\
-    ruby caesar_cipher --help | -h
+```ruby caesar_cipher --help | -h```
 
 Code / Decode messages:\
-    ruby caesar_cipher.rb OPTION, QUANTITY, MESSAGE
+```ruby caesar_cipher.rb OPTION, QUANTITY, MESSAGE```
 
-OPTION is either:
+OPTION is one of:
 ```
     --encode
     --decode
@@ -49,8 +52,8 @@ MESSAGE is a string representing the message to be coded or decoded.
 
 **Examples**:
 ```
-ruby caesar_cipher.rb --encode, 1, "A simple message"
-ruby caesar_cipher.rb --decode, 1, "B!tjnqmf!nfttbhf"
+ruby caesar_cipher.rb --encode, 1, 'A simple message'
+ruby caesar_cipher.rb --decode, 1, 'B!tjnqmf!nfttbhf'
 ```
 
 Message coding is based on ascii values 32 - 126 covering space " " through "~"
