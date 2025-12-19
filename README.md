@@ -20,7 +20,7 @@ included as an argument.
 ruby caesar_cipher --encode 1 'A simple message'
 => 'B!tjnqmf!nfttbhf'
 
-ruby caesar_cipher --decode 1 'B!tjnqmf!nfttbhf'/
+ruby caesar_cipher --decode 1 'B!tjnqmf!nfttbhf'
 => 'A simple message'
 ```
 
